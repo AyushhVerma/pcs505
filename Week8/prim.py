@@ -46,14 +46,3 @@ class Graph:
             return
         
         return total_cost, edges
-
-def main():
-    graph: Graph = Graph(4)
-    graph.add_edge(0, 1, 10)
-    graph.add_edge(0, 2, 6)
-    graph.add_edge(0, 3, 5)
-    graph.add_edge(1, 3, 15)
-    graph.add_edge(2, 3, 4)
-    print(graph.lazy_prims_mst(0))
-
-main()
