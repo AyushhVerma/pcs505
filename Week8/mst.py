@@ -58,11 +58,3 @@ class Graph:
                 total_cost += edge.cost
         return total_cost
 
-if __name__ == '__main__':
-    graph: Graph = Graph(4)
-    graph.add_edge(0, 1, 10)
-    graph.add_edge(0, 2, 6)
-    graph.add_edge(0, 3, 5)
-    graph.add_edge(1, 3, 15)
-    graph.add_edge(2, 3, 4)
-    print(graph.kruskals_mst())
