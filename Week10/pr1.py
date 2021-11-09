@@ -11,7 +11,10 @@ if __name__ == '__main__':
     while idx < n-1:
         while tp[idx][0] < prev_end:
             idx += 1
-        prev_end = tp[idx][1]
-        acts.append(idx+1)
+            if idx == n:
+                break
+        if idx != n:
+            prev_end = tp[idx][1]
+            acts.append(idx+1)
     print("No. of non-conflicting activities:", len(acts))
     print("List of selected activities:", acts)
